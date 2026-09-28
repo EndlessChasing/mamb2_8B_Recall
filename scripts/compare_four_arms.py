@@ -2,17 +2,21 @@
 """Compare paired source/compressed Resurface results on identical inputs."""
 from __future__ import annotations
 import argparse
+import hashlib
 import json
 from pathlib import Path
-import sys
-
-ROOT=Path(__file__).resolve().parents[1]
-sys.path.insert(0,str(ROOT))
-from mamba2_recall.runtime import sha256_file
 
 OLD_MK_SHA='306ae9e8ed5e78756f7c8ea39c8db40dbebf3895ced3c5c279722be5100a344b'
 OLD_PPL_SHA='06a71c11fc0a12a52add6e7bf5d28b8a8eb9f832b2ec1cb846d9acaf30afe961'
 IDENTITY=('id','condition','prompt_token_sha256_int64le')
+
+
+def sha256_file(path):
+    digest=hashlib.sha256()
+    with Path(path).open('rb') as stream:
+        for chunk in iter(lambda:stream.read(8<<20),b''):
+            digest.update(chunk)
+    return digest.hexdigest()
 
 
 def identity(rows):
