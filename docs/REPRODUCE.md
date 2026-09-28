@@ -8,6 +8,18 @@ The measured environment was PyTorch 2.11.0+cu128, `mamba-ssm`
 Blackwell. `train.py` loads two FP16 copies of the source, so its measured
 peak PyTorch CUDA allocation was 34.59 GB.
 
+Install a CUDA-compatible PyTorch first. The native GPU extension is a
+separate prerequisite; `pip install -e .` alone does not install it:
+
+```bash
+python -m pip install -e .
+python -m pip install --no-build-isolation 'mamba-ssm==2.3.2.post1'
+```
+
+Building the extension requires a matching CUDA toolkit/compiler. Use the
+package versions in the [verification environment receipt](../reports/verification_origin_v1.json) when comparing
+numerical replay results.
+
 From the repository root, replace `/path/to/source` with the directory
 containing the official source checkpoint and tokenizer:
 
@@ -19,10 +31,12 @@ CUDA_VISIBLE_DEVICES= python scripts/prepare_data.py \
   --split train --source-dir /path/to/source
 CUDA_VISIBLE_DEVICES= python scripts/prepare_data.py \
   --split confirm --source-dir /path/to/source
+train_manifest_sha=$(python -c "import hashlib; from pathlib import Path; print(hashlib.sha256(Path('training_data/numeric_v1/train/manifest.json').read_bytes()).hexdigest())")
+confirm_manifest_sha=$(python -c "import hashlib; from pathlib import Path; print(hashlib.sha256(Path('training_data/numeric_v1/confirm/manifest.json').read_bytes()).hexdigest())")
 python scripts/train.py \
   --source-dir /path/to/source \
   --data-root training_data/numeric_v1 \
-  --train-manifest-sha256 e711c87378dcee84c9ff5023ae15aa11c5abe6c64fbe68c52c543eaea70103b8 \
+  --train-manifest-sha256 "$train_manifest_sha" \
   --prose-manifest docs/prose_train_manifest.json \
   --prose-tokens training_data/prose/training_tokens.pt \
   --out-dir artifacts/reproduction_1
@@ -30,13 +44,18 @@ python scripts/evaluate.py \
   --source-dir /path/to/source \
   --adapter artifacts/reproduction_1/adapter_fp16.pt \
   --data-root training_data/numeric_v1 \
-  --eval-manifest-sha256 227737dd5fbb301d76e583457ff8ee29246047661b3e9a64ebd068a6f34f376c \
+  --eval-manifest-sha256 "$confirm_manifest_sha" \
   --split confirm \
   --report reports/reproduction_1.json
 ```
 
-The pinned TRAIN and CONFIRM manifest hashes require the exact tokenizer,
-data generator, frozen protocol and public dataset revision. All scripts
+Use the hashes of your newly prepared manifests (also printed by preparation).
+Manifests record `sys.version`, so a different Python build can change the
+whole-file hash even when all generated prompts and tokens are identical.
+The historical hashes remain in the published reports as run receipts. The
+loaders independently check the frozen generator, tokenizer, protocol and
+all generated raw/token data; computing the local manifest hash does not
+replace those content checks. All scripts
 refuse to overwrite existing result paths. To score the published adapter
 without retraining, use
 `artifacts/source_resurface_v1/adapter_fp16.pt` with `scripts/evaluate.py`.

@@ -36,6 +36,10 @@ On the specified 384 normal MK prompts, source recall rose from **147/384** to
 The evaluation used previously observed numeric templates and instances, so
 it is a reproducible protocol replay rather than an untouched holdout.
 
+A [fresh public-clone GPU verification](docs/VERIFICATION.md) reproduced
+every per-window NLL and all 1,536 MK generation records exactly. Independent
+raw-report arithmetic, tokenizer decoding and regenerated-input checks passed.
+
 ## Source and dependencies
 
 The official checkpoint and tokenizer are downloaded separately from

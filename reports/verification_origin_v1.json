@@ -1,0 +1,48 @@
+{
+  "git_commit": "e4137a43ef87cb95b70243ea2271f8e9b3d93d27",
+  "git_clean": true,
+  "environment": {
+    "python": "3.10.12",
+    "packages": {
+      "torch": "2.11.0+cu128",
+      "mamba-ssm": "2.3.2.post1",
+      "numpy": "1.26.4",
+      "triton": "3.6.0",
+      "datasets": "4.8.5",
+      "sentencepiece": "0.2.1"
+    },
+    "cuda_runtime": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "tf32_matmul": false
+  },
+  "command": [
+    "/home/horde/.venvs/lodram/bin/python",
+    "scripts/evaluate.py",
+    "--source-dir",
+    "/home/horde/Mamba2-8B-E8W5/models/source",
+    "--adapter",
+    "/home/horde/mamb2_8B_Recall_verify_e4137a4/artifacts/source_resurface_v1/adapter_fp16.pt",
+    "--data-root",
+    "/home/horde/mamb2_8B_Recall_verify_e4137a4/training_data/numeric_v1",
+    "--eval-manifest-sha256",
+    "227737dd5fbb301d76e583457ff8ee29246047661b3e9a64ebd068a6f34f376c",
+    "--split",
+    "confirm",
+    "--report",
+    "/home/horde/mamb2_8B_Recall_verify_e4137a4/reports/verification_replay_v1.json"
+  ],
+  "code_sha256": {
+    "mamba2_recall/__init__.py": "79b32606ac476c3248911c55571bf97f96689770067856ce8347837478ef33fd",
+    "mamba2_recall/calibration.py": "54e178521abfe2513fb7bac2aed2ef178fc01b63135222ecc212001ee3ce0a04",
+    "mamba2_recall/evaluation.py": "95cba0b201e37f92e6cbfadb9b3e9d79ba7b0cdc9efda6a58a6216b0d84d35e0",
+    "mamba2_recall/resurface_data.py": "1a547fe3cedca406d6e3db85f65c3ce554558691e3b29b9c92d8fd6bd1c1ba35",
+    "mamba2_recall/resurface_loss.py": "ec045368583b6e49f484341b2d718658bb59e8d11050710377742752c1c67294",
+    "mamba2_recall/resurface_native.py": "2dd08c7ee8958c832f0ae9da7cf5f261dceeff3e528e493c905c7c52df7166d7",
+    "mamba2_recall/runtime.py": "73a405b4286dda403f252cf0b73d367adcfead96298a1e6f440b65f5b309530c",
+    "scripts/compare_four_arms.py": "6e41f9ab4f6e39c5a23da6ad1edc29e5b10da57e93e2ea008f4d153c8f195e3b",
+    "scripts/evaluate.py": "825acc58d957abe9c755b44c783970c7a379594dfd15e0a67f0ff9a0638f74bb",
+    "scripts/prepare_data.py": "11d5e6872382fb8a62987937ec37006422b38e4b1650431a4794d5834c6a4604",
+    "scripts/prepare_prose.py": "f63659bab565f2428629f2c9239ba2bdb4ccfb6c647accc44be71b2f419a7c7e",
+    "scripts/train.py": "3ea5ef8beadf5d4f14650e9fe15949cd6116e247ddd7641d7f024c5763aa8eb2"
+  }
+}

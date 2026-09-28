@@ -1,0 +1,20 @@
+{
+  "method": "huggingface_hub.HfApi model_info(files_metadata=True) and dataset_info at pinned revisions",
+  "verified_date": "2026-09-28",
+  "model": "nvidia/mamba2-8b-3t-4k",
+  "model_revision": "b915550c63ba9359f88f44d1f6a600d85af27302",
+  "files": [
+    {
+      "file": "mt_nlg_plus_multilingual_ja_zh_the_stack_frac_015_256k.model",
+      "bytes": 4573028,
+      "sha256": "5862e2f71caf762bc9845662be5fec2867deb58d874568235a02a36c5111cd09"
+    },
+    {
+      "file": "release/mp_rank_00/model_optim_rng.pt",
+      "bytes": 16474189490,
+      "sha256": "47c2766f6aad89d73beafbeaecb334aab902d7370906d081764a90bb7a8bbbcb"
+    }
+  ],
+  "dataset": "Salesforce/wikitext",
+  "dataset_revision": "b08601e04326c79dfdd32d625aee71d232d685c3"
+}

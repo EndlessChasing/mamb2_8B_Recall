@@ -1,0 +1,22 @@
+{
+  "complete": true,
+  "passed": true,
+  "method": "CPU-only regenerated numeric prompts and pinned WikiText tokens; SentencePiece decode of saved generated IDs; independent little-endian int64 token hashing",
+  "tokenizer_sha256": "5862e2f71caf762bc9845662be5fec2867deb58d874568235a02a36c5111cd09",
+  "reports_sha256": {
+    "source_resurface_v1_confirm_full.json": "4c99694d66af1db71924bd9d3113f1ea2f0a9b93191ed229f3d26f2320c8c940",
+    "verification_replay_v1.json": "a83faedb5f25150ff8c3bf93a312619c11191e5dd06677d236cb7658c8173779"
+  },
+  "generated_outputs_checked": 3088,
+  "prompt_receipts_checked": 3088,
+  "ppl_window_receipts_checked": 520,
+  "train_rows": 1536,
+  "confirm_rows": 768,
+  "numeric_train_confirm_overlap_counts": {
+    "ids": 0,
+    "prompts": 0,
+    "keys": 0,
+    "values": 0
+  },
+  "errors": []
+}
