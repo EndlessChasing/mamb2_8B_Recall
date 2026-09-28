@@ -90,7 +90,7 @@ def main():
         'metrics':metrics,'source_adapter_gain_pp':source_gain,
         'compressed_adapter_gain_pp':compressed_gain,
         'difference_of_gains_pp':compressed_gain-source_gain,
-        'interpretation':'Descriptive four-arm comparison on already observed numeric/template and validation data; teacher bases differ; no claim of unseen-template or untouched-test generalization.'}
+        'interpretation':'Descriptive four-arm comparison on already observed numeric/template and validation data; the compressed base also received 448 small-tensor readaptation updates before adapter training, and each arm has its own unadapted-base KL teacher. Do not infer a causal quantization-only interaction or unseen-template generalization.'}
     a.output.parent.mkdir(parents=True,exist_ok=True)
     a.output.write_text(json.dumps(result,indent=2,allow_nan=False)+'\n')
     print(json.dumps({'complete':True,'source_adapter_gain_pp':source_gain,
