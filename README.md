@@ -1,5 +1,11 @@
 # mamb2_8B_Recall
 
+| Model | Normal MK | PPL | Size |
+| --- | ---: | ---: | ---: |
+| Original model (FP16 runtime) | 147/384 | 7.33418 | 16.474 GB |
+| Original model + Resurface | **365/384** | **7.05206** | 16.477 GB |
+| E8/W5 + Resurface | 340/384 | 7.59316 | 3.141 GB |
+
 Research control: apply a post-D Resurface-style readout adapter to the
 **uncompressed, pure NVIDIA Mamba2-8B** source checkpoint. This isolates the
 effect of giving the full-precision source the same 1,536-step recall adaptation
