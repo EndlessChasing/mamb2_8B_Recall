@@ -16,6 +16,7 @@ code, not that reference's private checkpoint, training data, or code.
 
 - [x] Source model/tokenizer and experiment protocol identified.
 - [x] Standalone loader, post-D adapter, numeric data and objective ported.
+- [x] CPU helper checks, numeric TRAIN preparation, exact prose regeneration and one-step native GPU smoke.
 - [ ] Full precision adapter training completed.
 - [ ] Paired MK and full WikiText-2 PPL completed.
 - [ ] Same-protocol four-arm comparison completed.
@@ -51,6 +52,10 @@ update. `scripts/evaluate.py` scores the final serialized adapter with both
 full PPL and normal/removed numeric binding recall. Output directories are
 excluded from Git; trained adapters and reports will be published separately
 after validation.
+
+`scripts/compare_four_arms.py` checks all 768 numeric prompt identities and
+all 130 prose-window identities before tabulating source and compressed arms.
+Its comparison is descriptive because the earlier CONFIRM set is already known.
 
 Code in `mamba2_recall` is adapted from the associated E8/W5 repository,
 whose public code is GPL-3.0; this repository retains that license. The NVIDIA
