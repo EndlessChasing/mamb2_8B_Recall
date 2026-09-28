@@ -1,5 +1,9 @@
 # mamb2_8B_Recall
 
+Download the verified adapter and runtime on
+[Hugging Face: EndlessChasing/Mamb2_8B_Recall](https://huggingface.co/EndlessChasing/Mamb2_8B_Recall).
+See the [publication receipt and pinned download](docs/HUGGINGFACE.md).
+
 | Model | Normal MK | PPL | Size |
 | --- | ---: | ---: | ---: |
 | Original model (FP16 runtime) | 147/384 | 7.33418 | 16.474 GB |

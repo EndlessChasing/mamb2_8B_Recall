@@ -1,0 +1,632 @@
+{
+  "complete": true,
+  "verified_at": "2026-09-28T21:26:27.650176+00:00",
+  "repo": "EndlessChasing/Mamb2_8B_Recall",
+  "url": "https://huggingface.co/EndlessChasing/Mamb2_8B_Recall",
+  "revision": "5b7b27af9cd49d2a55bd080383f1d873c181ce83",
+  "pinned_url": "https://huggingface.co/EndlessChasing/Mamb2_8B_Recall/tree/5b7b27af9cd49d2a55bd080383f1d873c181ce83",
+  "public": true,
+  "exact_local_inventory": true,
+  "exact_remote_inventory": true,
+  "manifest_sha256": "3faebc20566aadb53bf3f8871ecf9a8b426b84999a771ccf35d0e84fb304c541",
+  "files_verified": 34,
+  "total_repo_file_bytes": 5859085,
+  "all_files_downloaded_anonymously": true,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 41,
+      "sha256": "4009e8f5faf67ca3607a646c9b12350d8237e344e6853c59bf9dbad697db3952",
+      "git_blob_id": "e92cf9b594e8e4608b60733d93926bdec544b5c1",
+      "local_manifest_verified": true,
+      "server_verification": "server_git_blob_with_local_sha256",
+      "server_blob_id": "e92cf9b594e8e4608b60733d93926bdec544b5c1",
+      "server_size": 41
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "git_blob_id": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7",
+      "local_manifest_verified": true,
+      "server_verification": "server_git_blob_with_local_sha256",
+      "server_blob_id": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7",
+      "server_size": 35149
+    },
+    {
+      "path": "README.md",
+      "bytes": 9722,
+      "sha256": "6cccc0796a4e8e843fd1c086298fff0b6b9b57f7cf6d93e518942be3cbcb8519",
+      "git_blob_id": "3ff2d555de7ececa78342b6e7e8338aeac106f4b",
+      "local_manifest_verified": true,
+      "server_verification": "server_git_blob_with_local_sha256",
+      "server_blob_id": "3ff2d555de7ececa78342b6e7e8338aeac106f4b",
+      "server_size": 9722
+    },
+    {
+      "path": "artifacts/source_resurface_v1/adapter_fp16.pt",
+      "bytes": 2374143,
+      "sha256": "e8b2b4dfe69f8e85dc9e147c9aeaa3297cff14f4043e558bb1795ad476c1fca0",
+      "git_blob_id": "28d055ce5f6846e87f196ef91c441463393f89f2",
+      "local_manifest_verified": true,
+      "server_verification": "server_lfs_sha256",
+      "server_blob_id": "8c05dec734cadc49f4a0de6071c29b1308a9d6ef",
+      "server_size": 2374143
+    },
+    {
+      "path": "checksum_manifest.json",
+      "bytes": 5601,
+      "sha256": "3faebc20566aadb53bf3f8871ecf9a8b426b84999a771ccf35d0e84fb304c541",
+      "git_blob_id": "1e61fa5001d5e8c4b6e6c2623a88968b19147a95",
+      "local_manifest_verified": "manifest_itself_hashed",
+      "server_verification": "server_git_blob_with_local_sha256",
+      "server_blob_id": "1e61fa5001d5e8c4b6e6c2623a88968b19147a95",
+      "server_size": 5601
+    },
+    {
+      "path": "docs/PROTOCOL.md",
+      "bytes": 4537,
+      "sha256": "dee9457bfaca067b63837dcd3bc94bf9ef9a3d805b1ab04227db05a4b92c54c2",
+      "git_blob_id": "70025921161b9b9989844ec99e0538b5b3a2f529",
+      "local_manifest_verified": true,
+      "server_verification": "server_git_blob_with_local_sha256",
+      "server_blob_id": "70025921161b9b9989844ec99e0538b5b3a2f529",
+      "server_size": 4537
+    },
+    {
+      "path": "docs/REPRODUCE.md",
+      "bytes": 3393,
+      "sha256": "8e993bc5745875e16580d41ad3f47345c137ef5c50834435f931902bc533556c",
+      "git_blob_id": "959bd3bf5d776ac7add9b682bf0e76da96fb5ce0",
+      "local_manifest_verified": true,
+      "server_verification": "server_git_blob_with_local_sha256",
+      "server_blob_id": "959bd3bf5d776ac7add9b682bf0e76da96fb5ce0",
+      "server_size": 3393
+    },
+    {
+      "path": "docs/RESULTS.md",
+      "bytes": 3620,
+      "sha256": "16cbb30bb287abfffa01b52948b4f7afcd195257d294848610c9ad4924165e16",
+      "git_blob_id": "9553e4385b71938b2679f71189a5b24690100780",
+      "local_manifest_verified": true,
+      "server_verification": "server_git_blob_with_local_sha256",
+      "server_blob_id": "9553e4385b71938b2679f71189a5b24690100780",
+      "server_size": 3620
+    },
+    {
+      "path": "docs/VERIFICATION.md",
+      "bytes": 5405,
+      "sha256": "53e16aace1f7eb0f7da9c1c313fcc58a3bbc8873f3a75b984a820bf84f18efa9",
+      "git_blob_id": "ea3005fb712e1ab1c5c7580125f5cb2e34ba4fac",
+      "local_manifest_verified": true,
+      "server_verification": "server_git_blob_with_local_sha256",
+      "server_blob_id": "ea3005fb712e1ab1c5c7580125f5cb2e34ba4fac",
+      "server_size": 5405
+    },
+    {
+      "path": "docs/confirm_manifest.json",
+      "bytes": 2411,
+      "sha256": "227737dd5fbb301d76e583457ff8ee29246047661b3e9a64ebd068a6f34f376c",
+      "git_blob_id": "34bbd443489ef8c6f22b596859373cc99e7758b8",
+      "local_manifest_verified": true,
+      "server_verification": "server_git_blob_with_local_sha256",
+      "server_blob_id": "34bbd443489ef8c6f22b596859373cc99e7758b8",
+      "server_size": 2411
+    },
+    {
+      "path": "docs/prose_train_manifest.json",
+      "bytes": 126611,
+      "sha256": "facb2ca461615a4199781bd21784d642d6674f5b862641b3b9edac3fb499b89d",
+      "git_blob_id": "d2000e91e7ce3f87406f9ea14c92c56dae998017",
+      "local_manifest_verified": true,
+      "server_verification": "server_git_blob_with_local_sha256",
+      "server_blob_id": "d2000e91e7ce3f87406f9ea14c92c56dae998017",
+      "server_size": 126611
+    },
+    {
+      "path": "mamba2_recall/__init__.py",
+      "bytes": 56,
+      "sha256": "79b32606ac476c3248911c55571bf97f96689770067856ce8347837478ef33fd",
+      "git_blob_id": "4b24e0e1a3b715e32021548cce7d4c76047740f9",
+      "local_manifest_verified": true,
+      "server_verification": "server_git_blob_with_local_sha256",
+      "server_blob_id": "4b24e0e1a3b715e32021548cce7d4c76047740f9",
+      "server_size": 56
+    },
+    {
+      "path": "mamba2_recall/calibration.py",
+      "bytes": 1941,
+      "sha256": "54e178521abfe2513fb7bac2aed2ef178fc01b63135222ecc212001ee3ce0a04",
+      "git_blob_id": "19c1e8692acb825b59e55684a219f7f0a091ae0e",
+      "local_manifest_verified": true,
+      "server_verification": "server_git_blob_with_local_sha256",
+      "server_blob_id": "19c1e8692acb825b59e55684a219f7f0a091ae0e",
+      "server_size": 1941
+    },
+    {
+      "path": "mamba2_recall/evaluation.py",
+      "bytes": 10299,
+      "sha256": "95cba0b201e37f92e6cbfadb9b3e9d79ba7b0cdc9efda6a58a6216b0d84d35e0",
+      "git_blob_id": "96b3b19b50a4a9c8cce78ea7171875fe4ac19ba5",
+      "local_manifest_verified": true,
+      "server_verification": "server_git_blob_with_local_sha256",
+      "server_blob_id": "96b3b19b50a4a9c8cce78ea7171875fe4ac19ba5",
+      "server_size": 10299
+    },
+    {
+      "path": "mamba2_recall/resurface_data.py",
+      "bytes": 21740,
+      "sha256": "1a547fe3cedca406d6e3db85f65c3ce554558691e3b29b9c92d8fd6bd1c1ba35",
+      "git_blob_id": "997881ddfe96065ecd9d32de35f63937ef4384a8",
+      "local_manifest_verified": true,
+      "server_verification": "server_git_blob_with_local_sha256",
+      "server_blob_id": "997881ddfe96065ecd9d32de35f63937ef4384a8",
+      "server_size": 21740
+    },
+    {
+      "path": "mamba2_recall/resurface_loss.py",
+      "bytes": 10656,
+      "sha256": "ec045368583b6e49f484341b2d718658bb59e8d11050710377742752c1c67294",
+      "git_blob_id": "f7a58a36576f2a4ea8b215881e9efca0fa8faffe",
+      "local_manifest_verified": true,
+      "server_verification": "server_git_blob_with_local_sha256",
+      "server_blob_id": "f7a58a36576f2a4ea8b215881e9efca0fa8faffe",
+      "server_size": 10656
+    },
+    {
+      "path": "mamba2_recall/resurface_native.py",
+      "bytes": 28603,
+      "sha256": "2dd08c7ee8958c832f0ae9da7cf5f261dceeff3e528e493c905c7c52df7166d7",
+      "git_blob_id": "76f11c01d2986025fce7368d032db0fccb552ade",
+      "local_manifest_verified": true,
+      "server_verification": "server_git_blob_with_local_sha256",
+      "server_blob_id": "76f11c01d2986025fce7368d032db0fccb552ade",
+      "server_size": 28603
+    },
+    {
+      "path": "mamba2_recall/runtime.py",
+      "bytes": 9912,
+      "sha256": "73a405b4286dda403f252cf0b73d367adcfead96298a1e6f440b65f5b309530c",
+      "git_blob_id": "9ec45dfb2bc7e3ceeb94de42761b4919056b4726",
+      "local_manifest_verified": true,
+      "server_verification": "server_git_blob_with_local_sha256",
+      "server_blob_id": "9ec45dfb2bc7e3ceeb94de42761b4919056b4726",
+      "server_size": 9912
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 398,
+      "sha256": "6378c4de2788a21d36d6e5a96aba9c2277158c9eb1ff3252d8e155f6a998da0b",
+      "git_blob_id": "817251a4bf044fde543422aee49f55bec1eb61a0",
+      "local_manifest_verified": true,
+      "server_verification": "server_git_blob_with_local_sha256",
+      "server_blob_id": "817251a4bf044fde543422aee49f55bec1eb61a0",
+      "server_size": 398
+    },
+    {
+      "path": "reports/four_arm_comparison_v1.json",
+      "bytes": 1965,
+      "sha256": "d4b75b7a68028e36e93130cd31d3400442fb83e4bff30f67a011702598983e20",
+      "git_blob_id": "fe96828aa794f14ee2d133b03c52f3bdfd19aabe",
+      "local_manifest_verified": true,
+      "server_verification": "server_git_blob_with_local_sha256",
+      "server_blob_id": "fe96828aa794f14ee2d133b03c52f3bdfd19aabe",
+      "server_size": 1965
+    },
+    {
+      "path": "reports/source_resurface_v1_confirm_full.json",
+      "bytes": 1123173,
+      "sha256": "4c99694d66af1db71924bd9d3113f1ea2f0a9b93191ed229f3d26f2320c8c940",
+      "git_blob_id": "4d0c26844833f57462a37dbd6b7fcf847f74aa02",
+      "local_manifest_verified": true,
+      "server_verification": "server_git_blob_with_local_sha256",
+      "server_blob_id": "4d0c26844833f57462a37dbd6b7fcf847f74aa02",
+      "server_size": 1123173
+    },
+    {
+      "path": "reports/source_resurface_v1_train.json",
+      "bytes": 837067,
+      "sha256": "72c5c46ffff8e9981b8747a2fe10cb9ab67695d1555f2deb43d497ec7caed5e1",
+      "git_blob_id": "4a425a48555414b273c8052b7cda4f067124226f",
+      "local_manifest_verified": true,
+      "server_verification": "server_git_blob_with_local_sha256",
+      "server_blob_id": "4a425a48555414b273c8052b7cda4f067124226f",
+      "server_size": 837067
+    },
+    {
+      "path": "reports/verification_audit_v1.json",
+      "bytes": 53942,
+      "sha256": "16ab2fcf54b3786554b9d45770c1818f715d54c6fc0d61a295aa38cffd17ca91",
+      "git_blob_id": "4ee202f4734176ac247dcf0356b57155f5e516bf",
+      "local_manifest_verified": true,
+      "server_verification": "server_git_blob_with_local_sha256",
+      "server_blob_id": "4ee202f4734176ac247dcf0356b57155f5e516bf",
+      "server_size": 53942
+    },
+    {
+      "path": "reports/verification_hub_metadata_v1.json",
+      "bytes": 739,
+      "sha256": "194839dc297df34b749a69d7ddfd9b4f62c3d733b0918e43eddad6cf6b76bbd8",
+      "git_blob_id": "0f73034932a22bb3ccd93ea8f0b3063b5f612a62",
+      "local_manifest_verified": true,
+      "server_verification": "server_git_blob_with_local_sha256",
+      "server_blob_id": "0f73034932a22bb3ccd93ea8f0b3063b5f612a62",
+      "server_size": 739
+    },
+    {
+      "path": "reports/verification_origin_v1.json",
+      "bytes": 2286,
+      "sha256": "53fdecf6395bf9ebdf2d0e04be816ba0906aab4f1df761c088aac6fc85f852e6",
+      "git_blob_id": "6a7043adf7bc99933b084854feaf5afa1c15f93a",
+      "local_manifest_verified": true,
+      "server_verification": "server_git_blob_with_local_sha256",
+      "server_blob_id": "6a7043adf7bc99933b084854feaf5afa1c15f93a",
+      "server_size": 2286
+    },
+    {
+      "path": "reports/verification_replay_v1.json",
+      "bytes": 1123172,
+      "sha256": "a83faedb5f25150ff8c3bf93a312619c11191e5dd06677d236cb7658c8173779",
+      "git_blob_id": "930f92e64218f7cd2b4269cccea90e0c2bc806e5",
+      "local_manifest_verified": true,
+      "server_verification": "server_git_blob_with_local_sha256",
+      "server_blob_id": "930f92e64218f7cd2b4269cccea90e0c2bc806e5",
+      "server_size": 1123172
+    },
+    {
+      "path": "reports/verification_token_receipts_v1.json",
+      "bytes": 827,
+      "sha256": "ec95ed2c5a1bfb04a9aa0f538cf2f9c5fd881549e012cc26bbf67736b8ae1d6f",
+      "git_blob_id": "8e3216620d85a1907d93cfb3cef1133959a224b1",
+      "local_manifest_verified": true,
+      "server_verification": "server_git_blob_with_local_sha256",
+      "server_blob_id": "8e3216620d85a1907d93cfb3cef1133959a224b1",
+      "server_size": 827
+    },
+    {
+      "path": "resurface_config.json",
+      "bytes": 2903,
+      "sha256": "08f481f3218092abd1d1b68935ca641dd1239b80ffd25e9b3ac96dd4655ac96d",
+      "git_blob_id": "45acc853aa3822d430bf1ec3399f5f44c9ee6054",
+      "local_manifest_verified": true,
+      "server_verification": "server_git_blob_with_local_sha256",
+      "server_blob_id": "45acc853aa3822d430bf1ec3399f5f44c9ee6054",
+      "server_size": 2903
+    },
+    {
+      "path": "scripts/compare_four_arms.py",
+      "bytes": 5376,
+      "sha256": "6e41f9ab4f6e39c5a23da6ad1edc29e5b10da57e93e2ea008f4d153c8f195e3b",
+      "git_blob_id": "8997470055bb075440f49ba243dd58a434b01ffe",
+      "local_manifest_verified": true,
+      "server_verification": "server_git_blob_with_local_sha256",
+      "server_blob_id": "8997470055bb075440f49ba243dd58a434b01ffe",
+      "server_size": 5376
+    },
+    {
+      "path": "scripts/evaluate.py",
+      "bytes": 8114,
+      "sha256": "825acc58d957abe9c755b44c783970c7a379594dfd15e0a67f0ff9a0638f74bb",
+      "git_blob_id": "ec7c1c7a4058d1ea89facc94d2236658d9fb2e42",
+      "local_manifest_verified": true,
+      "server_verification": "server_git_blob_with_local_sha256",
+      "server_blob_id": "ec7c1c7a4058d1ea89facc94d2236658d9fb2e42",
+      "server_size": 8114
+    },
+    {
+      "path": "scripts/prepare_data.py",
+      "bytes": 1815,
+      "sha256": "11d5e6872382fb8a62987937ec37006422b38e4b1650431a4794d5834c6a4604",
+      "git_blob_id": "f7c7c8a1003208968aed99a169ba384a7220523d",
+      "local_manifest_verified": true,
+      "server_verification": "server_git_blob_with_local_sha256",
+      "server_blob_id": "f7c7c8a1003208968aed99a169ba384a7220523d",
+      "server_size": 1815
+    },
+    {
+      "path": "scripts/prepare_prose.py",
+      "bytes": 2371,
+      "sha256": "f63659bab565f2428629f2c9239ba2bdb4ccfb6c647accc44be71b2f419a7c7e",
+      "git_blob_id": "02022bd692b7848b29b26faa8a38e255dfe4bcfd",
+      "local_manifest_verified": true,
+      "server_verification": "server_git_blob_with_local_sha256",
+      "server_blob_id": "02022bd692b7848b29b26faa8a38e255dfe4bcfd",
+      "server_size": 2371
+    },
+    {
+      "path": "scripts/train.py",
+      "bytes": 12177,
+      "sha256": "3ea5ef8beadf5d4f14650e9fe15949cd6116e247ddd7641d7f024c5763aa8eb2",
+      "git_blob_id": "a18c59211f12e5e44345e5283a8ebf64e49b4069",
+      "local_manifest_verified": true,
+      "server_verification": "server_git_blob_with_local_sha256",
+      "server_blob_id": "a18c59211f12e5e44345e5283a8ebf64e49b4069",
+      "server_size": 12177
+    },
+    {
+      "path": "scripts/verify_replay.py",
+      "bytes": 28920,
+      "sha256": "8b08f0e9f8e8f5239764646e44c816dfb8ba9987ffb1c6dd936aea90ed652b2f",
+      "git_blob_id": "458b0fa5903ad376ce218897e6939fce03900ac1",
+      "local_manifest_verified": true,
+      "server_verification": "server_git_blob_with_local_sha256",
+      "server_blob_id": "458b0fa5903ad376ce218897e6939fce03900ac1",
+      "server_size": 28920
+    }
+  ],
+  "anonymous_download_checks": [
+    {
+      "path": ".gitattributes",
+      "url": "https://huggingface.co/EndlessChasing/Mamb2_8B_Recall/resolve/5b7b27af9cd49d2a55bd080383f1d873c181ce83/.gitattributes",
+      "http_status": 200,
+      "bytes": 41,
+      "sha256": "4009e8f5faf67ca3607a646c9b12350d8237e344e6853c59bf9dbad697db3952",
+      "full_anonymous_body_downloaded": true
+    },
+    {
+      "path": "LICENSE",
+      "url": "https://huggingface.co/EndlessChasing/Mamb2_8B_Recall/resolve/5b7b27af9cd49d2a55bd080383f1d873c181ce83/LICENSE",
+      "http_status": 200,
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "full_anonymous_body_downloaded": true
+    },
+    {
+      "path": "README.md",
+      "url": "https://huggingface.co/EndlessChasing/Mamb2_8B_Recall/resolve/5b7b27af9cd49d2a55bd080383f1d873c181ce83/README.md",
+      "http_status": 200,
+      "bytes": 9722,
+      "sha256": "6cccc0796a4e8e843fd1c086298fff0b6b9b57f7cf6d93e518942be3cbcb8519",
+      "full_anonymous_body_downloaded": true
+    },
+    {
+      "path": "artifacts/source_resurface_v1/adapter_fp16.pt",
+      "url": "https://huggingface.co/EndlessChasing/Mamb2_8B_Recall/resolve/5b7b27af9cd49d2a55bd080383f1d873c181ce83/artifacts/source_resurface_v1/adapter_fp16.pt",
+      "http_status": 200,
+      "bytes": 2374143,
+      "sha256": "e8b2b4dfe69f8e85dc9e147c9aeaa3297cff14f4043e558bb1795ad476c1fca0",
+      "full_anonymous_body_downloaded": true
+    },
+    {
+      "path": "checksum_manifest.json",
+      "url": "https://huggingface.co/EndlessChasing/Mamb2_8B_Recall/resolve/5b7b27af9cd49d2a55bd080383f1d873c181ce83/checksum_manifest.json",
+      "http_status": 200,
+      "bytes": 5601,
+      "sha256": "3faebc20566aadb53bf3f8871ecf9a8b426b84999a771ccf35d0e84fb304c541",
+      "full_anonymous_body_downloaded": true
+    },
+    {
+      "path": "docs/PROTOCOL.md",
+      "url": "https://huggingface.co/EndlessChasing/Mamb2_8B_Recall/resolve/5b7b27af9cd49d2a55bd080383f1d873c181ce83/docs/PROTOCOL.md",
+      "http_status": 200,
+      "bytes": 4537,
+      "sha256": "dee9457bfaca067b63837dcd3bc94bf9ef9a3d805b1ab04227db05a4b92c54c2",
+      "full_anonymous_body_downloaded": true
+    },
+    {
+      "path": "docs/REPRODUCE.md",
+      "url": "https://huggingface.co/EndlessChasing/Mamb2_8B_Recall/resolve/5b7b27af9cd49d2a55bd080383f1d873c181ce83/docs/REPRODUCE.md",
+      "http_status": 200,
+      "bytes": 3393,
+      "sha256": "8e993bc5745875e16580d41ad3f47345c137ef5c50834435f931902bc533556c",
+      "full_anonymous_body_downloaded": true
+    },
+    {
+      "path": "docs/RESULTS.md",
+      "url": "https://huggingface.co/EndlessChasing/Mamb2_8B_Recall/resolve/5b7b27af9cd49d2a55bd080383f1d873c181ce83/docs/RESULTS.md",
+      "http_status": 200,
+      "bytes": 3620,
+      "sha256": "16cbb30bb287abfffa01b52948b4f7afcd195257d294848610c9ad4924165e16",
+      "full_anonymous_body_downloaded": true
+    },
+    {
+      "path": "docs/VERIFICATION.md",
+      "url": "https://huggingface.co/EndlessChasing/Mamb2_8B_Recall/resolve/5b7b27af9cd49d2a55bd080383f1d873c181ce83/docs/VERIFICATION.md",
+      "http_status": 200,
+      "bytes": 5405,
+      "sha256": "53e16aace1f7eb0f7da9c1c313fcc58a3bbc8873f3a75b984a820bf84f18efa9",
+      "full_anonymous_body_downloaded": true
+    },
+    {
+      "path": "docs/confirm_manifest.json",
+      "url": "https://huggingface.co/EndlessChasing/Mamb2_8B_Recall/resolve/5b7b27af9cd49d2a55bd080383f1d873c181ce83/docs/confirm_manifest.json",
+      "http_status": 200,
+      "bytes": 2411,
+      "sha256": "227737dd5fbb301d76e583457ff8ee29246047661b3e9a64ebd068a6f34f376c",
+      "full_anonymous_body_downloaded": true
+    },
+    {
+      "path": "docs/prose_train_manifest.json",
+      "url": "https://huggingface.co/EndlessChasing/Mamb2_8B_Recall/resolve/5b7b27af9cd49d2a55bd080383f1d873c181ce83/docs/prose_train_manifest.json",
+      "http_status": 200,
+      "bytes": 126611,
+      "sha256": "facb2ca461615a4199781bd21784d642d6674f5b862641b3b9edac3fb499b89d",
+      "full_anonymous_body_downloaded": true
+    },
+    {
+      "path": "mamba2_recall/__init__.py",
+      "url": "https://huggingface.co/EndlessChasing/Mamb2_8B_Recall/resolve/5b7b27af9cd49d2a55bd080383f1d873c181ce83/mamba2_recall/__init__.py",
+      "http_status": 200,
+      "bytes": 56,
+      "sha256": "79b32606ac476c3248911c55571bf97f96689770067856ce8347837478ef33fd",
+      "full_anonymous_body_downloaded": true
+    },
+    {
+      "path": "mamba2_recall/calibration.py",
+      "url": "https://huggingface.co/EndlessChasing/Mamb2_8B_Recall/resolve/5b7b27af9cd49d2a55bd080383f1d873c181ce83/mamba2_recall/calibration.py",
+      "http_status": 200,
+      "bytes": 1941,
+      "sha256": "54e178521abfe2513fb7bac2aed2ef178fc01b63135222ecc212001ee3ce0a04",
+      "full_anonymous_body_downloaded": true
+    },
+    {
+      "path": "mamba2_recall/evaluation.py",
+      "url": "https://huggingface.co/EndlessChasing/Mamb2_8B_Recall/resolve/5b7b27af9cd49d2a55bd080383f1d873c181ce83/mamba2_recall/evaluation.py",
+      "http_status": 200,
+      "bytes": 10299,
+      "sha256": "95cba0b201e37f92e6cbfadb9b3e9d79ba7b0cdc9efda6a58a6216b0d84d35e0",
+      "full_anonymous_body_downloaded": true
+    },
+    {
+      "path": "mamba2_recall/resurface_data.py",
+      "url": "https://huggingface.co/EndlessChasing/Mamb2_8B_Recall/resolve/5b7b27af9cd49d2a55bd080383f1d873c181ce83/mamba2_recall/resurface_data.py",
+      "http_status": 200,
+      "bytes": 21740,
+      "sha256": "1a547fe3cedca406d6e3db85f65c3ce554558691e3b29b9c92d8fd6bd1c1ba35",
+      "full_anonymous_body_downloaded": true
+    },
+    {
+      "path": "mamba2_recall/resurface_loss.py",
+      "url": "https://huggingface.co/EndlessChasing/Mamb2_8B_Recall/resolve/5b7b27af9cd49d2a55bd080383f1d873c181ce83/mamba2_recall/resurface_loss.py",
+      "http_status": 200,
+      "bytes": 10656,
+      "sha256": "ec045368583b6e49f484341b2d718658bb59e8d11050710377742752c1c67294",
+      "full_anonymous_body_downloaded": true
+    },
+    {
+      "path": "mamba2_recall/resurface_native.py",
+      "url": "https://huggingface.co/EndlessChasing/Mamb2_8B_Recall/resolve/5b7b27af9cd49d2a55bd080383f1d873c181ce83/mamba2_recall/resurface_native.py",
+      "http_status": 200,
+      "bytes": 28603,
+      "sha256": "2dd08c7ee8958c832f0ae9da7cf5f261dceeff3e528e493c905c7c52df7166d7",
+      "full_anonymous_body_downloaded": true
+    },
+    {
+      "path": "mamba2_recall/runtime.py",
+      "url": "https://huggingface.co/EndlessChasing/Mamb2_8B_Recall/resolve/5b7b27af9cd49d2a55bd080383f1d873c181ce83/mamba2_recall/runtime.py",
+      "http_status": 200,
+      "bytes": 9912,
+      "sha256": "73a405b4286dda403f252cf0b73d367adcfead96298a1e6f440b65f5b309530c",
+      "full_anonymous_body_downloaded": true
+    },
+    {
+      "path": "pyproject.toml",
+      "url": "https://huggingface.co/EndlessChasing/Mamb2_8B_Recall/resolve/5b7b27af9cd49d2a55bd080383f1d873c181ce83/pyproject.toml",
+      "http_status": 200,
+      "bytes": 398,
+      "sha256": "6378c4de2788a21d36d6e5a96aba9c2277158c9eb1ff3252d8e155f6a998da0b",
+      "full_anonymous_body_downloaded": true
+    },
+    {
+      "path": "reports/four_arm_comparison_v1.json",
+      "url": "https://huggingface.co/EndlessChasing/Mamb2_8B_Recall/resolve/5b7b27af9cd49d2a55bd080383f1d873c181ce83/reports/four_arm_comparison_v1.json",
+      "http_status": 200,
+      "bytes": 1965,
+      "sha256": "d4b75b7a68028e36e93130cd31d3400442fb83e4bff30f67a011702598983e20",
+      "full_anonymous_body_downloaded": true
+    },
+    {
+      "path": "reports/source_resurface_v1_confirm_full.json",
+      "url": "https://huggingface.co/EndlessChasing/Mamb2_8B_Recall/resolve/5b7b27af9cd49d2a55bd080383f1d873c181ce83/reports/source_resurface_v1_confirm_full.json",
+      "http_status": 200,
+      "bytes": 1123173,
+      "sha256": "4c99694d66af1db71924bd9d3113f1ea2f0a9b93191ed229f3d26f2320c8c940",
+      "full_anonymous_body_downloaded": true
+    },
+    {
+      "path": "reports/source_resurface_v1_train.json",
+      "url": "https://huggingface.co/EndlessChasing/Mamb2_8B_Recall/resolve/5b7b27af9cd49d2a55bd080383f1d873c181ce83/reports/source_resurface_v1_train.json",
+      "http_status": 200,
+      "bytes": 837067,
+      "sha256": "72c5c46ffff8e9981b8747a2fe10cb9ab67695d1555f2deb43d497ec7caed5e1",
+      "full_anonymous_body_downloaded": true
+    },
+    {
+      "path": "reports/verification_audit_v1.json",
+      "url": "https://huggingface.co/EndlessChasing/Mamb2_8B_Recall/resolve/5b7b27af9cd49d2a55bd080383f1d873c181ce83/reports/verification_audit_v1.json",
+      "http_status": 200,
+      "bytes": 53942,
+      "sha256": "16ab2fcf54b3786554b9d45770c1818f715d54c6fc0d61a295aa38cffd17ca91",
+      "full_anonymous_body_downloaded": true
+    },
+    {
+      "path": "reports/verification_hub_metadata_v1.json",
+      "url": "https://huggingface.co/EndlessChasing/Mamb2_8B_Recall/resolve/5b7b27af9cd49d2a55bd080383f1d873c181ce83/reports/verification_hub_metadata_v1.json",
+      "http_status": 200,
+      "bytes": 739,
+      "sha256": "194839dc297df34b749a69d7ddfd9b4f62c3d733b0918e43eddad6cf6b76bbd8",
+      "full_anonymous_body_downloaded": true
+    },
+    {
+      "path": "reports/verification_origin_v1.json",
+      "url": "https://huggingface.co/EndlessChasing/Mamb2_8B_Recall/resolve/5b7b27af9cd49d2a55bd080383f1d873c181ce83/reports/verification_origin_v1.json",
+      "http_status": 200,
+      "bytes": 2286,
+      "sha256": "53fdecf6395bf9ebdf2d0e04be816ba0906aab4f1df761c088aac6fc85f852e6",
+      "full_anonymous_body_downloaded": true
+    },
+    {
+      "path": "reports/verification_replay_v1.json",
+      "url": "https://huggingface.co/EndlessChasing/Mamb2_8B_Recall/resolve/5b7b27af9cd49d2a55bd080383f1d873c181ce83/reports/verification_replay_v1.json",
+      "http_status": 200,
+      "bytes": 1123172,
+      "sha256": "a83faedb5f25150ff8c3bf93a312619c11191e5dd06677d236cb7658c8173779",
+      "full_anonymous_body_downloaded": true
+    },
+    {
+      "path": "reports/verification_token_receipts_v1.json",
+      "url": "https://huggingface.co/EndlessChasing/Mamb2_8B_Recall/resolve/5b7b27af9cd49d2a55bd080383f1d873c181ce83/reports/verification_token_receipts_v1.json",
+      "http_status": 200,
+      "bytes": 827,
+      "sha256": "ec95ed2c5a1bfb04a9aa0f538cf2f9c5fd881549e012cc26bbf67736b8ae1d6f",
+      "full_anonymous_body_downloaded": true
+    },
+    {
+      "path": "resurface_config.json",
+      "url": "https://huggingface.co/EndlessChasing/Mamb2_8B_Recall/resolve/5b7b27af9cd49d2a55bd080383f1d873c181ce83/resurface_config.json",
+      "http_status": 200,
+      "bytes": 2903,
+      "sha256": "08f481f3218092abd1d1b68935ca641dd1239b80ffd25e9b3ac96dd4655ac96d",
+      "full_anonymous_body_downloaded": true
+    },
+    {
+      "path": "scripts/compare_four_arms.py",
+      "url": "https://huggingface.co/EndlessChasing/Mamb2_8B_Recall/resolve/5b7b27af9cd49d2a55bd080383f1d873c181ce83/scripts/compare_four_arms.py",
+      "http_status": 200,
+      "bytes": 5376,
+      "sha256": "6e41f9ab4f6e39c5a23da6ad1edc29e5b10da57e93e2ea008f4d153c8f195e3b",
+      "full_anonymous_body_downloaded": true
+    },
+    {
+      "path": "scripts/evaluate.py",
+      "url": "https://huggingface.co/EndlessChasing/Mamb2_8B_Recall/resolve/5b7b27af9cd49d2a55bd080383f1d873c181ce83/scripts/evaluate.py",
+      "http_status": 200,
+      "bytes": 8114,
+      "sha256": "825acc58d957abe9c755b44c783970c7a379594dfd15e0a67f0ff9a0638f74bb",
+      "full_anonymous_body_downloaded": true
+    },
+    {
+      "path": "scripts/prepare_data.py",
+      "url": "https://huggingface.co/EndlessChasing/Mamb2_8B_Recall/resolve/5b7b27af9cd49d2a55bd080383f1d873c181ce83/scripts/prepare_data.py",
+      "http_status": 200,
+      "bytes": 1815,
+      "sha256": "11d5e6872382fb8a62987937ec37006422b38e4b1650431a4794d5834c6a4604",
+      "full_anonymous_body_downloaded": true
+    },
+    {
+      "path": "scripts/prepare_prose.py",
+      "url": "https://huggingface.co/EndlessChasing/Mamb2_8B_Recall/resolve/5b7b27af9cd49d2a55bd080383f1d873c181ce83/scripts/prepare_prose.py",
+      "http_status": 200,
+      "bytes": 2371,
+      "sha256": "f63659bab565f2428629f2c9239ba2bdb4ccfb6c647accc44be71b2f419a7c7e",
+      "full_anonymous_body_downloaded": true
+    },
+    {
+      "path": "scripts/train.py",
+      "url": "https://huggingface.co/EndlessChasing/Mamb2_8B_Recall/resolve/5b7b27af9cd49d2a55bd080383f1d873c181ce83/scripts/train.py",
+      "http_status": 200,
+      "bytes": 12177,
+      "sha256": "3ea5ef8beadf5d4f14650e9fe15949cd6116e247ddd7641d7f024c5763aa8eb2",
+      "full_anonymous_body_downloaded": true
+    },
+    {
+      "path": "scripts/verify_replay.py",
+      "url": "https://huggingface.co/EndlessChasing/Mamb2_8B_Recall/resolve/5b7b27af9cd49d2a55bd080383f1d873c181ce83/scripts/verify_replay.py",
+      "http_status": 200,
+      "bytes": 28920,
+      "sha256": "8b08f0e9f8e8f5239764646e44c816dfb8ba9987ffb1c6dd936aea90ed652b2f",
+      "full_anonymous_body_downloaded": true
+    }
+  ],
+  "scope": "Public distribution integrity at a pinned commit; no new GPU quality evaluation."
+}

@@ -1,0 +1,176 @@
+{
+  "complete": true,
+  "repo": "EndlessChasing/Mamb2_8B_Recall",
+  "source_commit": "4478c034aff9e5dab7af47efa84214287824138d",
+  "staging": "/Users/Kun/Documents/ChatGPT/mamb2_8B_Recall/artifacts/hf_publish_v1",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 41,
+      "sha256": "4009e8f5faf67ca3607a646c9b12350d8237e344e6853c59bf9dbad697db3952"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "README.md",
+      "bytes": 9722,
+      "sha256": "6cccc0796a4e8e843fd1c086298fff0b6b9b57f7cf6d93e518942be3cbcb8519"
+    },
+    {
+      "path": "artifacts/source_resurface_v1/adapter_fp16.pt",
+      "bytes": 2374143,
+      "sha256": "e8b2b4dfe69f8e85dc9e147c9aeaa3297cff14f4043e558bb1795ad476c1fca0"
+    },
+    {
+      "path": "docs/PROTOCOL.md",
+      "bytes": 4537,
+      "sha256": "dee9457bfaca067b63837dcd3bc94bf9ef9a3d805b1ab04227db05a4b92c54c2"
+    },
+    {
+      "path": "docs/REPRODUCE.md",
+      "bytes": 3393,
+      "sha256": "8e993bc5745875e16580d41ad3f47345c137ef5c50834435f931902bc533556c"
+    },
+    {
+      "path": "docs/RESULTS.md",
+      "bytes": 3620,
+      "sha256": "16cbb30bb287abfffa01b52948b4f7afcd195257d294848610c9ad4924165e16"
+    },
+    {
+      "path": "docs/VERIFICATION.md",
+      "bytes": 5405,
+      "sha256": "53e16aace1f7eb0f7da9c1c313fcc58a3bbc8873f3a75b984a820bf84f18efa9"
+    },
+    {
+      "path": "docs/confirm_manifest.json",
+      "bytes": 2411,
+      "sha256": "227737dd5fbb301d76e583457ff8ee29246047661b3e9a64ebd068a6f34f376c"
+    },
+    {
+      "path": "docs/prose_train_manifest.json",
+      "bytes": 126611,
+      "sha256": "facb2ca461615a4199781bd21784d642d6674f5b862641b3b9edac3fb499b89d"
+    },
+    {
+      "path": "mamba2_recall/__init__.py",
+      "bytes": 56,
+      "sha256": "79b32606ac476c3248911c55571bf97f96689770067856ce8347837478ef33fd"
+    },
+    {
+      "path": "mamba2_recall/calibration.py",
+      "bytes": 1941,
+      "sha256": "54e178521abfe2513fb7bac2aed2ef178fc01b63135222ecc212001ee3ce0a04"
+    },
+    {
+      "path": "mamba2_recall/evaluation.py",
+      "bytes": 10299,
+      "sha256": "95cba0b201e37f92e6cbfadb9b3e9d79ba7b0cdc9efda6a58a6216b0d84d35e0"
+    },
+    {
+      "path": "mamba2_recall/resurface_data.py",
+      "bytes": 21740,
+      "sha256": "1a547fe3cedca406d6e3db85f65c3ce554558691e3b29b9c92d8fd6bd1c1ba35"
+    },
+    {
+      "path": "mamba2_recall/resurface_loss.py",
+      "bytes": 10656,
+      "sha256": "ec045368583b6e49f484341b2d718658bb59e8d11050710377742752c1c67294"
+    },
+    {
+      "path": "mamba2_recall/resurface_native.py",
+      "bytes": 28603,
+      "sha256": "2dd08c7ee8958c832f0ae9da7cf5f261dceeff3e528e493c905c7c52df7166d7"
+    },
+    {
+      "path": "mamba2_recall/runtime.py",
+      "bytes": 9912,
+      "sha256": "73a405b4286dda403f252cf0b73d367adcfead96298a1e6f440b65f5b309530c"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 398,
+      "sha256": "6378c4de2788a21d36d6e5a96aba9c2277158c9eb1ff3252d8e155f6a998da0b"
+    },
+    {
+      "path": "reports/four_arm_comparison_v1.json",
+      "bytes": 1965,
+      "sha256": "d4b75b7a68028e36e93130cd31d3400442fb83e4bff30f67a011702598983e20"
+    },
+    {
+      "path": "reports/source_resurface_v1_confirm_full.json",
+      "bytes": 1123173,
+      "sha256": "4c99694d66af1db71924bd9d3113f1ea2f0a9b93191ed229f3d26f2320c8c940"
+    },
+    {
+      "path": "reports/source_resurface_v1_train.json",
+      "bytes": 837067,
+      "sha256": "72c5c46ffff8e9981b8747a2fe10cb9ab67695d1555f2deb43d497ec7caed5e1"
+    },
+    {
+      "path": "reports/verification_audit_v1.json",
+      "bytes": 53942,
+      "sha256": "16ab2fcf54b3786554b9d45770c1818f715d54c6fc0d61a295aa38cffd17ca91"
+    },
+    {
+      "path": "reports/verification_hub_metadata_v1.json",
+      "bytes": 739,
+      "sha256": "194839dc297df34b749a69d7ddfd9b4f62c3d733b0918e43eddad6cf6b76bbd8"
+    },
+    {
+      "path": "reports/verification_origin_v1.json",
+      "bytes": 2286,
+      "sha256": "53fdecf6395bf9ebdf2d0e04be816ba0906aab4f1df761c088aac6fc85f852e6"
+    },
+    {
+      "path": "reports/verification_replay_v1.json",
+      "bytes": 1123172,
+      "sha256": "a83faedb5f25150ff8c3bf93a312619c11191e5dd06677d236cb7658c8173779"
+    },
+    {
+      "path": "reports/verification_token_receipts_v1.json",
+      "bytes": 827,
+      "sha256": "ec95ed2c5a1bfb04a9aa0f538cf2f9c5fd881549e012cc26bbf67736b8ae1d6f"
+    },
+    {
+      "path": "resurface_config.json",
+      "bytes": 2903,
+      "sha256": "08f481f3218092abd1d1b68935ca641dd1239b80ffd25e9b3ac96dd4655ac96d"
+    },
+    {
+      "path": "scripts/compare_four_arms.py",
+      "bytes": 5376,
+      "sha256": "6e41f9ab4f6e39c5a23da6ad1edc29e5b10da57e93e2ea008f4d153c8f195e3b"
+    },
+    {
+      "path": "scripts/evaluate.py",
+      "bytes": 8114,
+      "sha256": "825acc58d957abe9c755b44c783970c7a379594dfd15e0a67f0ff9a0638f74bb"
+    },
+    {
+      "path": "scripts/prepare_data.py",
+      "bytes": 1815,
+      "sha256": "11d5e6872382fb8a62987937ec37006422b38e4b1650431a4794d5834c6a4604"
+    },
+    {
+      "path": "scripts/prepare_prose.py",
+      "bytes": 2371,
+      "sha256": "f63659bab565f2428629f2c9239ba2bdb4ccfb6c647accc44be71b2f419a7c7e"
+    },
+    {
+      "path": "scripts/train.py",
+      "bytes": 12177,
+      "sha256": "3ea5ef8beadf5d4f14650e9fe15949cd6116e247ddd7641d7f024c5763aa8eb2"
+    },
+    {
+      "path": "scripts/verify_replay.py",
+      "bytes": 28920,
+      "sha256": "8b08f0e9f8e8f5239764646e44c816dfb8ba9987ffb1c6dd936aea90ed652b2f"
+    }
+  ],
+  "manifest_sha256": "3faebc20566aadb53bf3f8871ecf9a8b426b84999a771ccf35d0e84fb304c541",
+  "total_files": 34,
+  "total_bytes": 5859085
+}

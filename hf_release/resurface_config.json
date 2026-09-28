@@ -1,0 +1,68 @@
+{
+  "format": "MAMBA2_SOURCE_RESURFACE_HF_RELEASE_V1",
+  "repo_id": "EndlessChasing/Mamb2_8B_Recall",
+  "source_repository": "https://github.com/EndlessChasing/mamb2_8B_Recall",
+  "source_commit": "4478c034aff9e5dab7af47efa84214287824138d",
+  "base_model": {
+    "repo_id": "nvidia/mamba2-8b-3t-4k",
+    "revision": "b915550c63ba9359f88f44d1f6a600d85af27302",
+    "checkpoint_path": "release/mp_rank_00/model_optim_rng.pt",
+    "checkpoint_sha256": "47c2766f6aad89d73beafbeaecb334aab902d7370906d081764a90bb7a8bbbcb",
+    "tokenizer_path": "mt_nlg_plus_multilingual_ja_zh_the_stack_frac_015_256k.model",
+    "tokenizer_sha256": "5862e2f71caf762bc9845662be5fec2867deb58d874568235a02a36c5111cd09",
+    "parameters": 8236999680,
+    "blocks": 56,
+    "architecture": "pure Mamba2; no attention or MoE",
+    "source_dtype": "bfloat16",
+    "runtime_dtype": "float16",
+    "download_separately": true
+  },
+  "adapter": {
+    "path": "artifacts/source_resurface_v1/adapter_fp16.pt",
+    "bytes": 2374143,
+    "sha256": "e8b2b4dfe69f8e85dc9e147c9aeaa3297cff14f4043e558bb1795ad476c1fca0",
+    "parameters": 1154104,
+    "payload_bytes": 2308208,
+    "gate_mode": "soft",
+    "format": "MAMBA2_POST_D_RESURFACE_FP16_V1",
+    "insertion_site": "post-D, before grouped gated RMSNorm",
+    "additional_recurrent_cache_bytes": 0,
+    "binding": {
+      "source_checkpoint_sha256": "47c2766f6aad89d73beafbeaecb334aab902d7370906d081764a90bb7a8bbbcb",
+      "tokenizer_sha256": "5862e2f71caf762bc9845662be5fec2867deb58d874568235a02a36c5111cd09",
+      "protocol_sha256": "dee9457bfaca067b63837dcd3bc94bf9ef9a3d805b1ab04227db05a4b92c54c2",
+      "train_manifest_sha256": "e711c87378dcee84c9ff5023ae15aa11c5abe6c64fbe68c52c543eaea70103b8",
+      "prose_manifest_sha256": "facb2ca461615a4199781bd21784d642d6674f5b862641b3b9edac3fb499b89d",
+      "prose_tokens_sha256": "e54b02e5162e042a9cdd504f4eb1b1652724fb240bbc2c97608967aa26297233",
+      "prose_tokens_int64le_sha256": "049dfb6847d778897fd19b67653c3189f29fbc19a36022e8a4801306d08228bc",
+      "prose_file_exact_historical": true,
+      "adapter": "MAMBA2_POST_D_RESURFACE_FP16_V1",
+      "successful_updates": 1536
+    }
+  },
+  "custom_runtime": {
+    "loader": "mamba2_recall.runtime.load_source_model",
+    "installer": "mamba2_recall.resurface_native.install_fp16",
+    "requires_gpu": "CUDA",
+    "transformers_auto_model_compatible": false,
+    "peft_compatible": false
+  },
+  "metrics": {
+    "source_ppl": 7.334175947318572,
+    "adapter_ppl": 7.052063515606311,
+    "source_normal_mk": {
+      "correct": 147,
+      "count": 384,
+      "accuracy": 0.3828125
+    },
+    "adapter_normal_mk": {
+      "correct": 365,
+      "count": 384,
+      "accuracy": 0.9505208333333334
+    },
+    "protocol": "docs/PROTOCOL.md",
+    "verification": "docs/VERIFICATION.md",
+    "verification_report": "reports/verification_audit_v1.json",
+    "untouched_holdout": false
+  }
+}
