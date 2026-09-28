@@ -95,7 +95,7 @@ def main():
     tokenizer=runtime.SentencePieceTokenizer(args.source_dir)
     manifest,cases,tokens=data.load_evaluation(args.data_root,args.split,args.eval_manifest_sha256,tokenizer)
     if (manifest['protocol_sha256']!=data.sha_file(ROOT/'docs'/'PROTOCOL.md')
-            or any(row['prompt_token_sha256_int64le']!=tok['prompt_token_sha256_int64le']
+            or any(data.token_digest(tokenizer.encode(row['prompt']))!=tok['prompt_token_sha256_int64le']
                    for row,tok in zip(cases,tokens))):
         raise ValueError('Evaluation data/protocol identity differs')
     adapter=native.read_fp16(args.adapter)

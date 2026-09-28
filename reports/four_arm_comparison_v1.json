@@ -1,0 +1,67 @@
+{
+  "format": "MAMBA2_SOURCE_COMPRESSED_FOUR_ARM_COMPARISON_V1",
+  "complete": true,
+  "source_report_sha256": "4c99694d66af1db71924bd9d3113f1ea2f0a9b93191ed229f3d26f2320c8c940",
+  "compressed_mk_report_sha256": "306ae9e8ed5e78756f7c8ea39c8db40dbebf3895ced3c5c279722be5100a344b",
+  "compressed_ppl_report_sha256": "06a71c11fc0a12a52add6e7bf5d28b8a8eb9f832b2ec1cb846d9acaf30afe961",
+  "exact_mk_prompt_identity": true,
+  "exact_ppl_window_identity": true,
+  "metrics": {
+    "source_fp16": {
+      "mk": {
+        "normal": {
+          "correct": 147,
+          "count": 384
+        },
+        "target_removed": {
+          "correct": 0,
+          "count": 384
+        }
+      },
+      "ppl": 7.334175947318572
+    },
+    "source_resurface": {
+      "mk": {
+        "normal": {
+          "correct": 365,
+          "count": 384
+        },
+        "target_removed": {
+          "correct": 0,
+          "count": 384
+        }
+      },
+      "ppl": 7.052063515606311
+    },
+    "compressed_base": {
+      "mk": {
+        "normal": {
+          "correct": 91,
+          "count": 384
+        },
+        "target_removed": {
+          "correct": 0,
+          "count": 384
+        }
+      },
+      "ppl": 7.622396587826496
+    },
+    "compressed_resurface": {
+      "mk": {
+        "normal": {
+          "correct": 340,
+          "count": 384
+        },
+        "target_removed": {
+          "correct": 0,
+          "count": 384
+        }
+      },
+      "ppl": 7.593163113563457
+    }
+  },
+  "source_adapter_gain_pp": 56.77083333333333,
+  "compressed_adapter_gain_pp": 64.84375,
+  "difference_of_gains_pp": 8.072916666666671,
+  "interpretation": "Descriptive four-arm comparison on already observed numeric/template and validation data; the compressed base also received 448 small-tensor readaptation updates before adapter training, and each arm has its own unadapted-base KL teacher. Do not infer a causal quantization-only interaction or unseen-template generalization."
+}
