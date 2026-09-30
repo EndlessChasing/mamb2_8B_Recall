@@ -1,12 +1,20 @@
 # mamb2_8B_Recall
 
-**Official WikiText-2 test PPL: 6.96282** with the fixed published Resurface
-adapter (7.24453 without it), across **147 reset windows / 300,963 targets**.
-The calculation retains the original native parallel SSD prefill path.
+## Official WikiText-2 test PPL
+
+| Fixed published model | PPL ↓ |
+| --- | ---: |
+| Without Resurface | 7.24453218 |
+| With published Resurface | **6.96281766** |
+
+**Official test split · 147 reset windows · 300,963 next-token targets.**
+Original native SSD parallel prefill; no state rounding after each token.
 [Test results and reproduction](docs/WT2_TEST_V1_RESULTS.md) ·
 [Paired raw evaluation](reports/wt2_test_v1/comparison.json) ·
 [CPU audit](reports/wt2_test_v1/cpu_audit_v1.json).
-Original validation and synthetic CONFIRM MK results are retained below.
+Historical validation PPL and synthetic CONFIRM MK results are retained below.
+
+
 
 
 Download the verified adapter and runtime on
@@ -38,7 +46,7 @@ code, not that reference's private checkpoint, training data, or code.
 - [x] Standalone loader, post-D adapter, numeric data and objective ported.
 - [x] CPU helper checks, numeric TRAIN preparation, exact prose regeneration and one-step native GPU smoke.
 - [x] Full precision adapter training completed.
-- [x] Paired MK and full WikiText-2 PPL completed.
+- [x] Paired synthetic CONFIRM MK and full WikiText-2 validation PPL completed.
 - [x] Same-protocol four-arm comparison completed.
 
 See the [frozen protocol](docs/PROTOCOL.md), [complete results](docs/RESULTS.md),
@@ -78,7 +86,7 @@ Both generators verify original token identities. The native GPU run uses
 `scripts/train.py` with the prepared TRAIN manifest SHA256, prose manifest,
 prose token file and a fresh output directory. `--smoke` runs one discarded
 update. `scripts/evaluate.py` scores the final serialized adapter with both
-full PPL and normal/removed numeric binding recall. Generated output
+full validation PPL and normal/removed synthetic CONFIRM numeric binding recall. Generated output
 directories are ignored by default; the validated adapter, training report
 and evaluation reports are explicitly included in this repo.
 

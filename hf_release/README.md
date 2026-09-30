@@ -19,6 +19,23 @@ datasets:
 
 # Mamb2_8B_Recall
 
+## Official WikiText-2 test PPL
+
+| Fixed published model | PPL ↓ |
+| --- | ---: |
+| Without Resurface | 7.24453218 |
+| With published Resurface | **6.96281766** |
+
+**Official test split · 147 reset windows · 300,963 next-token targets.**
+Original native SSD parallel prefill; no state rounding after each token.
+[Test results and reproduction](https://github.com/EndlessChasing/mamb2_8B_Recall/blob/4bd8098fd2e1c74012a512f74fc59a407377b25c/docs/WT2_TEST_V1_RESULTS.md) ·
+[Paired raw evaluation](https://github.com/EndlessChasing/mamb2_8B_Recall/blob/4bd8098fd2e1c74012a512f74fc59a407377b25c/reports/wt2_test_v1/comparison.json) ·
+[CPU audit](https://github.com/EndlessChasing/mamb2_8B_Recall/blob/4bd8098fd2e1c74012a512f74fc59a407377b25c/reports/wt2_test_v1/cpu_audit_v1.json).
+Historical validation PPL and synthetic CONFIRM MK results are retained below.
+
+> Historical publication template: the original tables below report validation PPL and previously observed synthetic CONFIRM MK. The current official test result above links to the separately audited, unchanged checkpoint evaluation.
+
+
 A **post-D Resurface-style readout adapter** for the uncompressed, pure
 [`nvidia/mamba2-8b-3t-4k`](https://huggingface.co/nvidia/mamba2-8b-3t-4k)
 language model. On the verified evaluation protocol, normal numeric multi-key
@@ -34,9 +51,9 @@ Source and reproduction code:
 [`EndlessChasing/mamb2_8B_Recall`](https://github.com/EndlessChasing/mamb2_8B_Recall/tree/4478c034aff9e5dab7af47efa84214287824138d),
 pinned at commit `4478c034aff9e5dab7af47efa84214287824138d`.
 
-## Verified results
+## Historical validation and synthetic CONFIRM MK
 
-| Model | WikiText-2 validation PPL | Normal MK | N=16 | N=64 | Target removed |
+| Model | WikiText-2 validation PPL | Synthetic CONFIRM MK | N=16 | N=64 | Target removed |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | Base model in FP16 runtime | 7.334175947318572 | 147/384 (38.28%) | 113/192 | 34/192 | 0/384 |
 | Base model + this adapter | **7.052063515606311** | **365/384 (95.05%)** | **191/192** | **174/192** | 0/384 |
@@ -138,7 +155,7 @@ evaluation was **17.08 GB** and during two-model training was **34.59 GB**.
 These measurements exclude some device and host overhead and are not minimum
 hardware requirements. Full base weights remain resident during inference.
 
-## Reproduce PPL and MK
+## Reproduce historical validation PPL and synthetic CONFIRM MK
 
 From the downloaded repository after the commands above:
 
@@ -156,7 +173,7 @@ python scripts/evaluate.py \
 ```
 
 This evaluates the base and serialized adapter in the same process, with full
-PPL and both MK conditions, then checks baseline restoration after removing
+WikiText-2 validation PPL and both synthetic CONFIRM MK conditions, then checks baseline restoration after removing
 the adapter. The output path must be new. The preparation script and evaluator
 validate frozen data content; use the newly generated manifest's SHA because
 its Python build metadata may vary. See the
