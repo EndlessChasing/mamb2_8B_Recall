@@ -1,10 +1,19 @@
 # mamb2_8B_Recall
 
+**Official WikiText-2 test PPL: 6.96282** with the fixed published Resurface
+adapter (7.24453 without it), across **147 reset windows / 300,963 targets**.
+The calculation retains the original native parallel SSD prefill path.
+[Test results and reproduction](docs/WT2_TEST_V1_RESULTS.md) ·
+[Paired raw evaluation](reports/wt2_test_v1/comparison.json) ·
+[CPU audit](reports/wt2_test_v1/cpu_audit_v1.json).
+Original validation and synthetic CONFIRM MK results are retained below.
+
+
 Download the verified adapter and runtime on
 [Hugging Face: EndlessChasing/Mamb2_8B_Recall](https://huggingface.co/EndlessChasing/Mamb2_8B_Recall).
 See the [publication receipt and pinned download](docs/HUGGINGFACE.md).
 
-| Model | Normal MK | PPL | Size |
+| Model | Synthetic CONFIRM MK | WT2 validation PPL | Size |
 | --- | ---: | ---: | ---: |
 | Original model (FP16 runtime) | 147/384 | 7.33418 | 16.474 GB |
 | Original model + Resurface | **365/384** | **7.05206** | 16.477 GB |
@@ -36,7 +45,7 @@ See the [frozen protocol](docs/PROTOCOL.md), [complete results](docs/RESULTS.md)
 [reproduction commands](docs/REPRODUCE.md),
 and [2.37 MB trained adapter](artifacts/source_resurface_v1/adapter_fp16.pt).
 On the specified 384 normal MK prompts, source recall rose from **147/384** to
-**365/384**; full WikiText-2 PPL changed from **7.33418** to **7.05206**.
+**365/384**; full WikiText-2 validation PPL changed from **7.33418** to **7.05206**.
 The evaluation used previously observed numeric templates and instances, so
 it is a reproducible protocol replay rather than an untouched holdout.
 
